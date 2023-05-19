@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+.grid--4 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+}
+
+.grid--4 .grid__item {
+    flex-basis: 100%;
+    padding-left: 16px;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card a {
+    color: #222;
+}
+
+.card__thumb img {
+    display: block;
+    width: 100%;
+}
+
+.card__content {
+    padding: 1rem;
+}
+
+.card__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 2rem;
+    padding: 0 1rem 0 1rem
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@media (min-width: 400px) {
+    .grid--4 .grid__item {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 700px) {
+    .grid--4 .grid__item {
+        flex-basis: 33.3333%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .grid--4 .grid__item {
+        flex-basis: 25%;
+    }
+}
